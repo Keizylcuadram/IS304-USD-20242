@@ -17,3 +17,13 @@ class Clase:
 
         print (mi_clase.atributo_clase)
         print(mi_clase.atributo_instancia)
+
+def es_contraseña_valida(contraseña):
+    if len(contraseña) >= 8:
+        return True
+    else:
+        return False
+
+print(es_contraseña_valida("12345678"))  # Imprime True
+print(es_contraseña_valida("123"))       # Imprime False
+
