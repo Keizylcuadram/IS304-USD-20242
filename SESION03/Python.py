@@ -17,6 +17,19 @@ class Clase:
 
         print (mi_clase.atributo_clase)
         print(mi_clase.atributo_instancia)
+        
+    class Clase:
+    atributo_clase= "Hola"
+    __atributo_clase="Hola"
+def __mi_metodo(self):
+    print("Has algo")
+    self.__variable=0
+    def metodo_normal (self):
+        self.__mi_metodo()
+
+        mi_clase = Clase()
+        mi_clase.atributo_clase
+        mi_clase.metodo_normal()
 
 def es_contraseña_valida(contraseña):
     if len(contraseña) >= 8:
