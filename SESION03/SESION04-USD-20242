@@ -9,3 +9,15 @@
      _|
    _|
 _|
+def draw_stairs(n):
+    if n > 0:
+        i = 0
+        start_position = (n*2)+1
+        while i < start_position:
+            position = f"{{:>{start_position-i}s}}"
+            if i == 0:
+                print(f"{position}".format('_'))
+            else:
+                print(f"{position}".format('_|'))
+                i += 1
+
